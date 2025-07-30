@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- own css -->
+    <link rel="stylesheet" href="../asset/css/menu.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/footer.css">
+    <link rel="stylesheet" href="./car-details.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+    <title>car-details</title>
+</head>
+
+<body>
+    <!-- header  and nav -->
+    <header class="header position-relative">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="header_top_contact_opening_widget text-center text-md-start">
+                            <ul class="mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-telephone"></i>
+                                        1-800-458-56987
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-map"></i>
+                                        47 Bakery Street, London, UK
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-clock"></i>
+                                        Mon - Fri 8:00 - 18:00
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-5">
+                        <div class="header_top_social_widgets text-center text-md-end">
+                            <ul class="m-0 d-flex justify-content-end social-item">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-twitter-x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="login">Login</a>
+                                </li>
+                                <li class="list-inline-item ">
+                                    <a href="#" class="register">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- respnsove navbar with bootstrap -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-lg">
+                <!-- Navbar Brand -->
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="../asset/img/header-logo.svg" alt="header-logo2.svg">
+                </a>
+
+                <!-- Menu Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Responsive Menu Structure -->
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav menu-list ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="../index.html">
+                                <span class="title">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="../listing-page/listing-page.html">
+                                <span class="title">Listing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="../contact-page/contact-page.html">
+                                <span class="title">Contact</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="../about-page/about-us.html">
+                                <span class="title">About</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border-0">
+                            <a class="nav-link p-0" href="../terms-and-condition-page/terms-and-condition.html">
+                                <span class="title">Terms-and-condition</span>
+                            </a>
+                        </li>
+                        <li class="add_listing">
+                            <a class="" href="">+ Add Listing</a>
+                        </li>
+                        <li class="nav-item sidebar_panel">
+                            <a class="sidebar_switch pt-0" href="#">
+                                <img class="sidebar_panel-icon" src="../asset/img/info.png" alt="communicate-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ride side sidebar after click info btn  -->
+        <div class="listing_sidebar">
+            <div class="siderbar_left_home pt20 active">
+                <a class="sidebar_switch sidebar_close_btn float-end" href="#">X</a>
+                <div class="sidebar-content mt-100">
+                    <h3 class="title">Quick contact info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.
+                        Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur.</p>
+                </div>
+                <div class="sidebar-content">
+                    <h5 class="title">CONTACT</h5>
+                    <div class="sidebar-phone">+1 670 936 46 70</div>
+                    <p>hello@voiture.com</p>
+                </div>
+                <div class="sidebar-content">
+                    <h5 class="title">OFFICE</h5>
+                    <p>Germany —<br>329 Queensberry Street,<br>North Melbourne VIC 3051</p>
+                </div>
+                <div class="sidebar-content">
+                    <h5 class="title">OPENING HOURS</h5>
+                    <p>Monday – Friday: 09:00AM – 09:00PM<br>Saturday: 09:00AM – 07:00PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- single -car -->
+    <section class="single-car mb-3">
+        <div class="container">
+            <!-- breakcrumb -->
+            <div class="inner-page-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="breadcrumb-content w-100">
+                                <ol class="breadcrumb text-white">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Cars for Sale</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading content -->
+            <div class="row single-car-heading-and-share-content">
+                <div class="col-lg-7 col-xl-8">
+                    <div class="single-page-heading-content">
+                        <div class="carsingle-content-wrapper">
+                            <ul class="car-info">
+                                <li class="list-inline-item">
+                                    <a href="#" class="car-condition">BRAND NEW - IN STOCK</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-clock-fill"></i>
+                                        2 years ago
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-eye-fill"></i>
+                                        13102
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="mt-4">
+                                <h2 class="car-title">Volvo XC 90</h2>
+                                <p class="para text-white fz-14">2.0h T8 11.6kWh Polestar Engineered Auto AWD (s/s) 5dr
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-4">
+                    <div class="singlepage-heading-content text-start text-lg-end">
+                        <div class="share-content">
+                            <ul class="ps-0">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        EMAIL
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-printer-fill"></i>
+                                        PRINT
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-heart-fill"></i>
+                                        SAVE
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-share-fill"></i>
+                                        SHARE
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-content mt-4">
+                            <div class="price">
+                                <p><small><del>$92,480</del></small> <span>$89,480</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="carousel-container">
+                    <div class="featured-badge">Featured</div>
+                    <div class="single-car-carousel owl-carousel position-relative">
+                        <div class="item">
+                            <img src="./details-page-slider-img/img-1.jpg" alt="Car Image 1">
+                        </div>
+                        <div class="item">
+                            <img src="./details-page-slider-img/img-2.jpg" alt="Car Image 2">
+                        </div>
+                        <div class="item">
+                            <img src="./details-page-slider-img/img-3.jpg" alt="Car Image 3">
+                        </div>
+                        <div class="item">
+                            <img src="./details-page-slider-img/img-4.jpg" alt="Car Image 4">
+                        </div>
+                        <div class="item">
+                            <img src="./details-page-slider-img/img-5.jpg" alt="Car Image 5">
+                        </div>
+                        <!-- Add more items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--card details gird view  -->
+    <section class="pt-5 m-0 car-detail-grid-view-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-xl-8 p-0">
+
+
+                    <div class="row mb-5">
+
+                        <!-- overview -->
+                        <div class="col-lg-12 mb-4">
+                            <div class="overview">
+                                <div class="overview-wrapper">
+                                    <h4 class="title">Overview</h4>
+                                    <ul class="list-group border-0 outline-0">
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Make</div>
+                                            </div>
+                                            <span class="overview-value">Volvo</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Model</div>
+                                            </div>
+                                            <span class="overview-value">XC 90</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Color</div>
+                                            </div>
+                                            <span class="overview-value">white</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Drive Type</div>
+                                            </div>
+                                            <span class="overview-value">4x4</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Transmission</div>
+                                            </div>
+                                            <span class="overview-value">Automatic</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Condition</div>
+                                            </div>
+                                            <span class="overview-value">Used</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Year</div>
+                                            </div>
+                                            <span class="overview-value">2021</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Mileage</div>
+                                            </div>
+                                            <span class="overview-value">280,000</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Fuel Type</div>
+                                            </div>
+                                            <span class="overview-value">Diesel</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Engine Size</div>
+                                            </div>
+                                            <span class="overview-value">5.2L</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Doors</div>
+                                            </div>
+                                            <span class="overview-value">5</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">Cylinders</div>
+                                            </div>
+                                            <span class="overview-value">10</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="me-auto">
+                                                <div class="overview-subtitle">VIN</div>
+                                            </div>
+                                            <span class="overview-value">2D456THA798700213GT21</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- description -->
+                        <div class="col-lg-12">
+                            <div class="description">
+                                <h4 class="description-title">Description <span class="float-end title-id">ID
+                                        #9535</span>
+                                </h4>
+                                <p class="first-para">The all-new Volvo XC60 is a terrific luxury compact SUV. It's been
+                                    fully redesigned for
+                                    2017 and features improvements across the board. These changes bump the vehicle from
+                                    its previous midpack
+                                    standing; it now resides with some of the best in the class. Some of the most
+                                    notable improvements include a
+                                    state-of-the-art infotainment system, more legroom for rear-seat riders, and peppy
+                                    engine choices.</p>
+                                <p class="mb25">Occupying over 8,000 square feet, perched over 1,100 feet in the air
+                                    with absolutely
+                                    breathtaking panoramic 360-degree views of all of New York City and the surrounding
+                                    tri-state area, The 82nd
+                                    Floor at 432 Park Avenue has been completely reimagined by one of the most
+                                    sought-after design houses in
+                                    London and represents an utterly unique opportunity to own a globally significant
+                                    property.</p>
+                                <p class="mt10 mb20">The Amrutha Lounge means port in the Turkish language, however the
+                                    restaurant opens its
+                                    doors to all aspects of the Mediterranean kitchen. The kitchen will be mostly
+                                    focused on Mediterranean food;
+                                    the owners of the restaurant are young professional chefs who can bring new,
+                                    exciting tastes to Angel,
+                                    Islington which will show through in the quality of food they prepare.</p>
+                            </div>
+                        </div>
+
+                        <!-- feature -->
+
+                        <div class="col-lg-12">
+                            <div class="feature mt-4">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h4 class="title">Features</h4>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-6">
+                                        <h5 class="subtitle">Convenience</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5">
+                                        <ul class="service-list">
+                                            <li>Heated Seats</li>
+                                            <li>Heated Steering Wheel</li>
+                                            <li>Navigation System</li>
+                                            <li>Power Liftgate</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6">
+                                        <h5 class="subtitle">Entertainment</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5">
+                                        <ul class="service-list">
+                                            <li>Apple CarPlay/Android Auto</li>
+                                            <li>Bluetooth</li>
+                                            <li>HomeLink</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6">
+                                        <h5 class="subtitle">Exterior</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5">
+                                        <ul class="service-list">
+                                            <li>Alloy Wheels</li>
+                                            <li>Sunroof/Moonroof</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6">
+                                        <h5 class="subtitle">Safety</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5">
+                                        <ul class="service-list">
+                                            <li>Backup Camera</li>
+                                            <li>Blind Spot Monitor</li>
+                                            <li>Brake Assist</li>
+                                            <li>LED Headlights</li>
+                                            <li>Stability Control</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <a class="view-all-feature" href="#">View all features</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- location -->
+
+                        <div class="col-lg-12">
+                            <div class="location mt-4">
+                                <div class="row">
+                                    <div class="">
+                                        <h4 class="title">Location</h4>
+                                        <div class="map-container">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25897782997!2d-74.11976341508278!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1699505333844!5m2!1sen!2s"
+                                                allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"
+                                                title="Google Maps embed showing New York, NY, USA"
+                                                aria-label="Map showing the location of New York, NY, USA" tabindex="0">
+                                            </iframe>
+
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between pt-4">
+                                            <address class="float-start address">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                3891 Ranchview Dr.
+                                                Richardson, California 62639
+                                            </address>
+                                            <button class="btn location-btn">Get Direction</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <div class="row">
+                        <div class="cta-btns-list p-0">
+                            <button class="w-100 cta-btn bg-warning btn">
+                                <i class="bi bi-telephone"></i>
+                                Call for information
+                            </button>
+
+                            <button class="w-100 mt-4 text-white cta-btn bg-success btn">
+                                <i class="bi bi-whatsapp"></i>
+                                Whastsapp
+                            </button>
+                        </div>
+
+
+                        <!-- side bar contact -->
+
+                        <div class="sidebar-seller-contact mt-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="flex-shrink-0">
+                                    <img class="seller-img" src="../asset/img/seller.png" alt="author.png">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="seller-name">Volvo Cars Istanbul</h5>
+                                    <p class="mb-0 seller-phone-number">
+                                        <i class="bi bi-telephone"></i>
+                                        (302) 555-0107
+                                    </p>
+                                </div>
+                            </div>
+                            <h4 class="contact-form-title">Contact Seller</h4>
+                            <form action="#">
+                                <div class="row p-0">
+                                    <div class="col-lg-12 p-0">
+                                        <div class="mb-3">
+                                            <input class="form-control" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 p-0">
+                                        <div class="mb-3">
+                                            <input class="form-control" type="text" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 p-0">
+                                        <div class="mb-3">
+                                            <input class="form-control " type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-0">
+                                        <div class="mb-3">
+                                            <textarea class="form-control"
+                                                rows="6">I am interested in a price quote on this vehicle. Please contact me at your earliest convenience with your best price for this vehicle.</textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-block bg-warning cta-btn w-100">
+                                            Send Message
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why choos us slider -->
+    <section class="why-choose-us-slider py-5">
+        <div class="container py-5">
+            <div class="col-lg-12">
+                <div class="">
+                    <h6 class="main-title mt-0 ">Why Choose Us?</h6>
+                </div>
+            </div>
+
+
+            <!-- slider item  -->
+
+            <div class="owl-carousel why-choose-slider position-relative">
+                <div class="slider-item">
+                    <a href="../details-page/details-page.html">
+                        <div class="card feature-listing-card">
+                            <div class="card-img-wrapper position-relative">
+                                <img src="../asset/img/car-5.webp" loading="lazy" class="card-img-top" alt="Nissan Qasqai - Sky Pack">
+                    
+                                <a href="../compare-page/compare.html" class="compare-button">
+                                    compare
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="car-price">$12977</p>
+                                <p class="car-model-name">Volvo XC90 - 2020</p>
+                                <div class="mb-2 d-flex align-items-center review-and-rating">
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <small class="text-muted">4.7 (684 reviews)</small>
+                                </div>
+                                <div class="car-details d-flex justify-content-between">
+                                    <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                        77362
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-bezier2"></i>
+                                        Automatic
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-item ">
+                    <a href="../details-page/details-page.html">
+                        <div class="card feature-listing-card">
+                            <div class="card-img-wrapper position-relative">
+                                <img src="../asset/img/car-5.webp" loading="lazy" class="card-img-top" alt="Nissan Qasqai - Sky Pack">
+                    
+                                <a href="../compare-page/compare.html" class="compare-button">
+                                    compare
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="car-price">$12977</p>
+                                <p class="car-model-name">Volvo XC90 - 2020</p>
+                                <div class="mb-2 d-flex align-items-center review-and-rating">
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <small class="text-muted">4.7 (684 reviews)</small>
+                                </div>
+                                <div class="car-details d-flex justify-content-between">
+                                    <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                        77362
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-bezier2"></i>
+                                        Automatic
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-item ">
+                    <a href="../details-page/details-page.html">
+                        <div class="card feature-listing-card">
+                            <div class="card-img-wrapper position-relative">
+                                <img src="../asset/img/car-5.webp" loading="lazy" class="card-img-top" alt="Nissan Qasqai - Sky Pack">
+                    
+                                <a href="../compare-page/compare.html" class="compare-button">
+                                    compare
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="car-price">$12977</p>
+                                <p class="car-model-name">Volvo XC90 - 2020</p>
+                                <div class="mb-2 d-flex align-items-center review-and-rating">
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <small class="text-muted">4.7 (684 reviews)</small>
+                                </div>
+                                <div class="car-details d-flex justify-content-between">
+                                    <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                        77362
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-bezier2"></i>
+                                        Automatic
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slider-item ">
+                    <a href="../details-page/details-page.html">
+                        <div class="card feature-listing-card">
+                            <div class="card-img-wrapper position-relative">
+                                <img src="../asset/img/car-5.webp" loading="lazy" class="card-img-top" alt="Nissan Qasqai - Sky Pack">
+                    
+                                <a href="../compare-page/compare.html" class="compare-button">
+                                    compare
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <p class="car-price">$12977</p>
+                                <p class="car-model-name">Volvo XC90 - 2020</p>
+                                <div class="mb-2 d-flex align-items-center review-and-rating">
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <small class="text-muted">4.7 (684 reviews)</small>
+                                </div>
+                                <div class="car-details d-flex justify-content-between">
+                                    <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                        77362
+                                    </small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                    <small class="text-muted">
+                                        <i class="bi bi-bezier2"></i>
+                                        Automatic
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="slider-item ">
+                    <div class="card feature-listing-card">
+                        <div class="card-img-wrapper">
+                            <img src="../asset/img/o-card-3.webp" loading="lazy" class="card-img-top"
+                                alt="Nissan Qasqai - Sky Pack">
+                        </div>
+                        <div class="card-body">
+                            <p class="car-price">$12977</p>
+                            <p class="car-model-name">Volvo XC90 - 2020</p>
+                            <div class="mb-2 d-flex align-items-center review-and-rating">
+                                <div class="star">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <small class="text-muted">4.7 (684 reviews)</small>
+                            </div>
+                            <div class="car-details d-flex justify-content-between">
+                                <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                    77362
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                <small class="text-muted">
+                                    <i class="bi bi-bezier2"></i>
+                                    Automatic
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slider-item ">
+                    <div class="card feature-listing-card">
+                        <div class="card-img-wrapper">
+                            <img src="../asset/img/o-card-3.webp" loading="lazy" class="card-img-top"
+                                alt="Nissan Qasqai - Sky Pack">
+                        </div>
+                        <div class="card-body">
+                            <p class="car-price">$12977</p>
+                            <p class="car-model-name">Volvo XC90 - 2020</p>
+                            <div class="mb-2 d-flex align-items-center review-and-rating">
+                                <div class="star">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <small class="text-muted">4.7 (684 reviews)</small>
+                            </div>
+                            <div class="car-details d-flex justify-content-between">
+                                <small class="text-muted"><i class="bi bi-car-front-fill"></i>
+                                    77362
+                                </small>
+                                <small class="text-muted">
+                                    <i class="bi bi-fuel-pump"></i> Diesel</small>
+                                <small class="text-muted">
+                                    <i class="bi bi-bezier2"></i>
+                                    Automatic
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container footer-nav-container">
+            <div class="row">
+                <div class="col-md-4 col-xl-7">
+                    <div class="footer-about-widget text-start">
+                        <div class="logo mb40 mb0-sm">
+                            <img src="../asset/img/footer-logo.svg" alt="header-logo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav-col col-md-8 col-xl-5">
+                    <div class="footer-menu-widget text-end text-md-end w-100">
+                        <ul class="w-100 flex-wrap text-start">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">Explore</a></li>
+                            <li class="list-inline-item"><a href="#">Listings</a></li>
+                            <li class="list-inline-item"><a href="#">Blog</a></li>
+                            <li class="list-inline-item"><a href="#">Shop</a></li>
+                            <li class="list-inline-item"><a href="#">Pages</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container footer-main-content-container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-about-widget">
+                        <h6 class="title">OFFICE</h6>
+                        <p>Germany —<br>329 Queensberry Street,<br>North Melbourne VIC 3051</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-contact-widget">
+                        <h6 class="title">NEED HELP</h6>
+                        <div class="footer-phone">+1 670 936 46 70</div>
+                        <p>hello@voiture.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-contact-widget">
+                        <h5 class="title">OPENING HOURS</h5>
+                        <p>Monday – Friday: 09:00AM – 09:00PM<br>Saturday: 09:00AM – 07:00PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <div class="footer-contact-widget w-100">
+                        <h6 class="title">KEEP IN TOUCH</h6>
+                        <form class="footer-mailchimp-form w-100">
+                            <div class="wrapper w-100">
+                                <div class="col-auto d-flex align-items-center w-100">
+                                    <input type="email" class="form-control " placeholder="Enter your email...">
+                                    <button type="submit" class="h-100">GO</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p>Get latest updates and offers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="copyright-col col-md-6 col-lg-8 col-xl-9">
+                    <div class="copyright-widget mt5 text-start mb20-sm">
+                        <p>CreativeLayers © 2022. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="social-col col-md-6 col-lg-4 col-xl-3">
+                    <div class="footer-social-widget text-start text-md-end">
+                        <ul class="mb-0 list-inline" aria-label="Social Media Links">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/yourpage" aria-label="Visit us on Facebook"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.twitter.com/yourprofile" aria-label="Follow us on Twitter"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/yourhandle" aria-label="Check out our Instagram"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/yourprofile"
+                                    aria-label="Connect with us on LinkedIn" rel="noopener noreferrer" target="_blank">
+                                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../asset/js/navbar.js"></script>
+    <script src="../asset/js/slider.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+.our-compare {
+    padding-bottom: 100px;
+}
+
+.compare-table .table-borderless thead th {
+    width: 315px !important;
+}
+
+.compare-item {
+    width: max-content;
+}
+
+.compare-item .thumb {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+
+    height: 245px;
+    width: 315px;
+}
+
+.delete-compare-item {
+    background-color: #ffffff;
+    border-radius: 10vmax;
+    color: #5F6973;
+    font-size: 15px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    transition: 0.3s;
+}
+
+.compare-item:hover .delete-compare-item {
+    opacity: 1;
+}
+
+.compare-item .thumb img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.compare-table .second-thead th:first-child {
+    padding-left: 30px !important;
+}
+
+.compare-table .second-thead th {
+    color: var(--theme-text-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    background-color: #f9f9f9;
+}
+
+
+.compare-table tbody tr th {
+    padding-left: 30px;
+}
+
+.compare-table tbody tr th,
+.compare-table table tr td {
+    color: var(--theme-text-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+
+.compare-table table tr td {
+    font-weight: 400;
+    color: #5F6973;
+    font-size: 14px;
+}
+
+.compare-table .table-striped tbody tr:nth-of-type(even) td,
+.table-striped tbody tr:nth-of-type(even) th {
+    background-color: #f9f9f9;
+}
+
+.table tbody .order-list {
+    padding: initial !important;
+    margin: initial !important;
+}
+
+.table tbody .order-list a {
+    color: #5F6973;
+}
+
+
+@media (max-width: 1200px) {
+    .compare-table .table-borderless thead th {
+        width: 210px !important;
+    }
+
+    .compare-item .thumb {
+        width: 210px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 991px) {
+    .compare-table .table-borderless thead th {
+        width: 150px !important;
+    }
+
+    .compare-item .thumb {
+        width: 150px;
+        height: 120px;
+    }
+
+    .our-compare {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .compare-table {
+        margin-block: 40px;
+    }
+    .compare-table .table-borderless thead th {
+        width: 105px !important;
+    }
+
+    .compare-item .thumb {
+        width: 105px;
+        height: 85px;
+    }
+}

@@ -1,0 +1,367 @@
+.single-car {
+    background: var(--theme-color);
+}
+
+.breadcrumb a {
+    color: #fff !important;
+}
+
+.breadcrumb li {
+    color: #fff !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #9c9c9c !important;
+}
+
+.single-car-heading-and-share-content a {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.car-info {
+    padding-left: 0px !important;
+}
+
+.car-condition {
+    background-color: #EB6245;
+    border-radius: 10vmax;
+    height: 25px;
+    padding: 0 13px;
+    font-size: 10px !important;
+    font-weight: 600;
+
+}
+
+.car-title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.share-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.price-content .price p {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.price-content small {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.featured-badge {
+    background-color: #D0473A;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 600;
+    height: 25px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    left: 30px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    text-transform: uppercase;
+    width: 75px;
+    z-index: 99;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.single-car-carousel .owl-dots {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 40px;
+    padding-inline: 10px;
+    padding-top: 20px;
+}
+
+.single-car-carousel .owl-dots .owl-dot {
+    width: 150px;
+    height: 110px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.owl-dots .owl-dot.active {
+    opacity: 1;
+}
+
+.single-car-carousel .owl-nav {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #fff;
+    padding-inline: 40px;
+}
+
+.single-car-carousel .owl-nav button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 18, 39, 0.4) !important;
+    border-radius: 10vmax;
+}
+
+.single-car-carousel .owl-nav button i::before {
+    vertical-align: -.030em !important;
+}
+
+.car-detail-grid-view-section {
+    background: #f9f9f9 !important;
+}
+
+/* .overview  */
+
+.overview,
+.description,
+.feature,
+.location {
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+}
+
+.overview-wrapper .title,
+.description-title,
+.feature .title,
+.location .title,
+.contact-form-title {
+    color: var(--theme-text-color);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-bottom: 30px;
+}
+
+.overview-wrapper ul li {
+    border: none !important;
+    border-bottom: 1px solid;
+
+    border-bottom: 1px solid #EAEAEA !important;
+    padding: 0px !important;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 38px;
+    letter-spacing: 0em;
+    border-radius: 0px !important;
+}
+
+.overview-subtitle {
+    font-weight: 600;
+    color: var(--theme-text-color);
+    font-size: 13px !important;
+}
+
+.overview-value {
+    color: #5F6973;
+    font-size: 13px;
+}
+
+
+/* .description */
+
+.title-id {
+    color: #5F6973;
+    font-size: 14px;
+}
+
+.description p {
+    color: #5F6973;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+.feature .subtitle {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--theme-text-color);
+}
+
+.feature ul li {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5F6973;
+}
+
+.feature hr {
+    background-color: #EAEAEA;
+    opacity: 1;
+    height: 1px;
+    margin: 1rem 0;
+}
+
+.view-all-feature {
+    text-decoration: underline !important;
+    color: rgba(0, 0, 255, 0.705) !important;
+    font-size: 13px;
+}
+
+.location address {
+    color: #5F6973;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+}
+
+.location-btn {
+    background-color: #5F6973;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    height: 45px;
+    width: 150px;
+}
+
+.location-btn:hover {
+    background: #E7AB1D;
+}
+
+.cta-btn {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    height: 58px;
+}
+
+.sidebar-seller-contact {
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    margin-block: 30px;
+}
+
+.seller-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.seller-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.seller-phone-number {
+    font-size: 14px;
+    color: #5F6973;
+}
+
+.sidebar-seller-contact input {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: 13px;
+    height: 50px;
+    padding-left: 20px;
+    box-shadow: none !important;
+    color: #5F6973;
+}
+
+.sidebar-seller-contact textarea {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    box-shadow: none;
+    color: #5F6973;
+}
+
+.why-choose-slider .owl-dots {
+    display: flex !important;
+    width: 100% !important;
+    gap: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.why-choose-slider .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #5F6973 !important;
+    border-radius: 10vmax;
+}
+
+.why-choose-slider .owl-dot.active {
+    background: #1947E2 !important;
+}
+
+@media (max-width: 991px) {
+
+    .owl-carousel .item img {
+        height: 225px;
+    }
+
+    .owl-dots {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .share-content ul {
+        justify-content: flex-start;
+
+    }
+
+    .share-content ul a {
+        font-size: 13px;
+    }
+
+    .price-content .price p {
+        font-size: 28px;
+    }
+}
